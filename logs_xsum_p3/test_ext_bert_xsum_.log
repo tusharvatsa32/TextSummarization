@@ -1,0 +1,101 @@
+[2021-04-13 20:00:38,392 INFO] Loading checkpoint from 
+[2021-04-13 20:01:07,834 INFO] Loading checkpoint from 
+[2021-04-13 20:01:46,890 INFO] Loading checkpoint from trained_models/manuel/
+[2021-04-13 20:02:14,797 INFO] Loading checkpoint from trained_models/manuel/model_step_50000.pt
+[2021-04-13 20:02:24,701 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2021-04-13 20:02:24,702 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-04-13 20:02:24,729 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2021-04-13 20:02:32,766 INFO] Loading test dataset from ../data/bert_data_xsum_new/xsum.test.0.bert.pt, number of examples: 2001
+[2021-04-13 20:02:32,772 INFO] * number of parameters: 120512513
+[2021-04-13 20:03:28,906 INFO] Loading test dataset from ../data/bert_data_xsum_new/xsum.test.1.bert.pt, number of examples: 2001
+[2021-04-13 20:04:24,752 INFO] Loading test dataset from ../data/bert_data_xsum_new/xsum.test.2.bert.pt, number of examples: 2001
+[2021-04-13 20:05:20,233 INFO] Loading test dataset from ../data/bert_data_xsum_new/xsum.test.3.bert.pt, number of examples: 2001
+[2021-04-13 20:06:17,691 INFO] Loading test dataset from ../data/bert_data_xsum_new/xsum.test.4.bert.pt, number of examples: 2001
+[2021-04-13 20:07:15,156 INFO] Loading test dataset from ../data/bert_data_xsum_new/xsum.test.5.bert.pt, number of examples: 1329
+[2021-04-13 20:07:55,045 INFO] Writing summaries.
+[2021-04-13 20:07:55,045 INFO] Processing summaries. Saving system files to ../temp/tmp86wpwks8/system and model files to ../temp/tmp86wpwks8/model.
+[2021-04-13 20:07:55,046 INFO] Processing files in ../temp/rouge-tmp-2021-04-13-20-07-54/candidate/.
+[2021-04-13 20:07:55,779 INFO] Saved processed files to ../temp/tmp86wpwks8/system.
+[2021-04-13 20:07:55,780 INFO] Processing files in ../temp/rouge-tmp-2021-04-13-20-07-54/reference/.
+[2021-04-13 20:07:56,440 INFO] Saved processed files to ../temp/tmp86wpwks8/model.
+[2021-04-13 20:07:56,506 INFO] Written ROUGE configuration to ../temp/tmplkvb8ntj/rouge_conf.xml
+[2021-04-13 20:07:56,506 INFO] Running ROUGE with command /home/ubuntu/p3/files/pyrouge/tools/ROUGE-1.5.5/ROUGE-1.5.5.pl -e /home/ubuntu/p3/files/pyrouge/tools/ROUGE-1.5.5/data -c 95 -m -r 1000 -n 2 -a ../temp/tmplkvb8ntj/rouge_conf.xml
+[2021-04-13 20:09:00,238 INFO] Rouges at step 50000 
+>> ROUGE-F(1/2/3/l): 21.57/4.16/16.86
+ROUGE-R(1/2/3/l): 40.48/8.05/31.76
+
+[2021-04-13 20:09:00,238 INFO] Validation xent: 5.09483 at step 50000
+[2021-04-13 20:09:51,732 INFO] Loading checkpoint from trained_models/manuel/model_step_48000.pt
+[2021-04-13 20:10:01,630 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2021-04-13 20:10:01,631 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-04-13 20:10:01,692 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2021-04-13 20:10:05,969 INFO] Loading test dataset from ../data/bert_data_xsum_new/xsum.test.0.bert.pt, number of examples: 2001
+[2021-04-13 20:10:05,972 INFO] * number of parameters: 120512513
+[2021-04-13 20:11:01,709 INFO] Loading test dataset from ../data/bert_data_xsum_new/xsum.test.1.bert.pt, number of examples: 2001
+[2021-04-13 20:11:58,570 INFO] Loading test dataset from ../data/bert_data_xsum_new/xsum.test.2.bert.pt, number of examples: 2001
+[2021-04-13 20:12:56,291 INFO] Loading test dataset from ../data/bert_data_xsum_new/xsum.test.3.bert.pt, number of examples: 2001
+[2021-04-13 20:13:53,664 INFO] Loading test dataset from ../data/bert_data_xsum_new/xsum.test.4.bert.pt, number of examples: 2001
+[2021-04-13 20:14:49,488 INFO] Loading test dataset from ../data/bert_data_xsum_new/xsum.test.5.bert.pt, number of examples: 1329
+[2021-04-13 20:15:27,381 INFO] Writing summaries.
+[2021-04-13 20:15:27,381 INFO] Processing summaries. Saving system files to ../temp/tmphms32iwh/system and model files to ../temp/tmphms32iwh/model.
+[2021-04-13 20:15:27,382 INFO] Processing files in ../temp/rouge-tmp-2021-04-13-20-15-26/candidate/.
+[2021-04-13 20:15:28,131 INFO] Saved processed files to ../temp/tmphms32iwh/system.
+[2021-04-13 20:15:28,132 INFO] Processing files in ../temp/rouge-tmp-2021-04-13-20-15-26/reference/.
+[2021-04-13 20:15:28,806 INFO] Saved processed files to ../temp/tmphms32iwh/model.
+[2021-04-13 20:15:28,873 INFO] Written ROUGE configuration to ../temp/tmpcbt07ft6/rouge_conf.xml
+[2021-04-13 20:15:28,873 INFO] Running ROUGE with command /home/ubuntu/p3/files/pyrouge/tools/ROUGE-1.5.5/ROUGE-1.5.5.pl -e /home/ubuntu/p3/files/pyrouge/tools/ROUGE-1.5.5/data -c 95 -m -r 1000 -n 2 -a ../temp/tmpcbt07ft6/rouge_conf.xml
+[2021-04-13 20:16:32,566 INFO] Rouges at step 48000 
+>> ROUGE-F(1/2/3/l): 21.61/4.22/16.89
+ROUGE-R(1/2/3/l): 40.91/8.24/32.10
+
+[2021-04-13 20:16:32,567 INFO] Validation xent: 4.74846 at step 48000
